@@ -4,7 +4,7 @@ require_relative 'card'
 class Deck
   attr_reader :cards
 
-  CARDS_TYPES = [*2..10, 'J', 'Q', 'K', 'A'].freeze
+  CARDS_TYPES = [*'2'..'10', 'J', 'Q', 'K', 'A'].freeze
   CARDS_SUITS = [:diamonds, :spades, :clubs, :hearts].freeze
 
   def initialize
