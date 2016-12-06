@@ -2,7 +2,7 @@ require_relative 'player'
 
 # User class
 class User < Player
-  attr_reader :name
+  attr_accessor :name
 
   def initalize(name)
     @name = name
